@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title></title>
+  <title>Bike Tracker</title>
+  <h2>Search a catalog of stolen bikes</h2>
+  <h3>Enter a ZIP Code.</h3>
+  <input type="text" id="input">
+  
+  <button id="search">Search</button><br>
+
+  <input type="radio" id="week" name="time-stamp" value="604800000">
+  <label for="week">past week</label><br>
+  <input type="radio" id="month" name="time-stamp" value="2629800000">
+  <label for="month">month</label><br>
+  <input type="radio" id="year" name="time-stamp" value="31557600000">
+  <label for="year">year</label><br>
+  <div class="bikes"></div>
+  <div class="showErrors"></div>
 </head>
 <body>
 
